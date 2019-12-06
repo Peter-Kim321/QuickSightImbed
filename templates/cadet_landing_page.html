@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+	<div class="d-flex justify-content-between mt-2 mb-2">
+	  <div>
+	   	<h2>All Cadets</h2>
+	  </div>
+	  <div>
+	    <input type="image" src="/static/images/print_icon.png" value="Create PDF" id="btPrint" onclick="createPDF()" width="35px" height="35px"/>
+	  </div>
+ </div>
+
+	<div id="tab">
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th scope="col"></th>
+		      <th scope="col">First Name</th>
+		      <th scope="col">Last Name</th>
+		      <th scope="col">Local Hours</th>
+		      <th scope="col">Other Hours</th>
+		      <th scope="col">Total Hours</th>
+		      <th scope="col">Total Points</th>
+		    </tr>
+		  </thead>
+		  <tbody>
+				{% for row in table %}
+			    <tr>
+			      <th scope="row">{{table.index(row)}}</th>
+		        <td>{{row[0]}}</td>
+		        <td>{{row[1]}}</td>
+		        <td>{{row[2]}}</td>
+		        <td>{{row[3]}}</td>
+		        <td>{{row[4]}}</td>
+		        <td>{{row[5]}}</td>
+			    </tr>
+	    	{% endfor %}
+		  </tbody>
+		</table>
+	</div>
+
+{% endblock %}

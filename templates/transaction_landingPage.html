@@ -1,0 +1,41 @@
+<!--Developed with Love by Peter Kim, 20/7/19-->	
+<!-- BASE HTML -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cadet Landing Page</title>
+  	<link rel="stylesheet" href="/../static/main.css">	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script type="text/javascript" src="/../static/js/print.js"></script>
+</head>
+
+<body>
+
+	<div class="nav-bar">
+		<img src="/static/images/St_John_Nav_Logo.png">		
+		<div id="nav-container">
+			<ul>
+				<li><a href="/cadet_landing_page">Home</a></li>
+				<li><a href="/reward_landing_page">Rewards</a></li>		
+				<li><a href="/transaction_landingPage">Transactions</a></li>		
+			</ul>
+		</div>
+	</div>
+
+	<p>Name, Reward, Quant:</p>
+
+	<form method="POST">
+		{{ form.name }}
+		{{ form.reward }}
+		{{ form.quant }}
+		<input type="submit">
+	</form>
+
+
+
+</body>
+</html>
+<!-- END BASEHTML -->
+

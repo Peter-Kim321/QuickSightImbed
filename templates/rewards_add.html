@@ -1,0 +1,50 @@
+<!--Developed with Love by Peter Kim, 1/7/19-->	
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Rewards Add</title>
+  	<link rel="stylesheet" href="/../static/main.css">	
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+
+	<div class="nav-bar">
+		<img src="/static/images/St_John_Nav_Logo.png">		
+		<div id="nav-container">
+			<ul>
+				<li><a href="/cadet_landing_page">Home</a></li>
+				<li><a href="/reward_landing_page">Rewards</a></li>			
+			</ul>
+		</div>
+	</div>
+ 
+
+{% block content %}
+
+<form method="POST" action="">
+	<p>
+		{{form.name.label}} <br>
+	   	{{form.name(size=30, placeholder="First Aid Kit")}}
+    </p>
+	<p>
+		{{form.points_required.label}} <br>
+	   	{{form.points_required(size=30, placeholder="123")}}
+    </p>
+	<p>
+		{{form.price.label}} <br>
+	   	{{form.price(placeholder="123", size=50, maxlength="11")}}
+    </p>
+	<p>
+		{{form.is_active.label}} <br>
+	   	{{form.is_active(size=30)}}
+    </p>
+    <p>{{form.submit()}}</p>
+</form>
+
+</body>
+
+{% endblock %}
+</html>

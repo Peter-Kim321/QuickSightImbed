@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  float: left;
+}
+
+/*//////////////////////////
+/// Top Navigation Bar  ///
+/////////////////////////*/
+
+#nav-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+  float: left;
+  position: absolute;
+  left: -600px;
+}
+
+.nav-bar {
+  background-color: #352d2f;
+  height: 70px;
+  width: 100%;
+  text-align:center;
+}
+.nav-bar img{
+  float:left;
+  height: 100%;
+}
+.nav-bar ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+.nav-bar li a {
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+/*////////////////
+/// print icon ///
+////////////////*/
+  
+#print-icon-container {
+  width: 100%;
+  margin: auto;
+  height: 40px;
+  position: absolute;
+}
+
+.print-icon {
+  background-color: #352d2f;
+  height: 100%;
+  width: 100%;
+  text-align:center;
+}
+.print-icon input{
+  float:right;
+  height: 100%;
+  margin: 10px;
+}

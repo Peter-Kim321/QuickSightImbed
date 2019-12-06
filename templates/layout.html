@@ -1,0 +1,28 @@
+<!--Developed with Love by Peter Kim-->	
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cadet Landing Page</title>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/../static/js/print.js"></script>
+</head>
+
+<body>
+  {% include "base/nav.html" %}
+  
+  <div class="container-fluid">
+    {% block content %}
+
+    {% endblock %}
+  </div>
+  
+  {% include "base/footer.html" %}
+</body>
+</html>
